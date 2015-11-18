@@ -63,11 +63,9 @@
 
                               <?php } else { ?>
                               <li><a href="login.php">Login</a></li>
-                              <li><a href="register.php">Register</a></li>
+                              <li><a href="Register.php">Register</a></li>
                               
                               <?php } ?>
-                                <li><a href="CP2/index.php">Check Point 2</a></li>
-                    <li><a href="MVC/index.php">MVC</a></li>
         
 
                             </ul>

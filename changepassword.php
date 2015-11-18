@@ -54,7 +54,7 @@
 
                               <?php } else { ?>
                               <li><a href="login.php">Login</a></li>
-                              <li><a href="register.php">Register</a></li>
+                              <li><a href="Register.php">Register</a></li>
                               
                               <?php } ?>
         

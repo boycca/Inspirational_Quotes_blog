@@ -1,9 +1,4 @@
 <?php
-//include('classes/Database.php'); 
-//include('classes/Session.php'); 
-
-?>
-<?php
 	class User {
 		private $_db,
 				$_data,
@@ -12,7 +7,7 @@
 				$_isLoggedIn;
 
 		public function __construct($user = null) {
-			 $this->_db 			= Database::getInstance();
+			$this->_db 			= Database::getInstance();
 			$this->_sessionName = Config::get('session/sessionName');
 			$this->_cookieName 	= Config::get('remember/cookieName');
 
@@ -26,72 +21,10 @@
 						self::logout();
 					}
 				}
-			} else { 
+			} else {
 				$this->find($user);
-			}  
+			}
 		}
-
-
-		public function __destruct(){ 
-
-  } 
-
-
-//Setters 
- public function setUserID($_data) { 
-	$this->ID = $_data;
-  } 
-
-public function setUsername($_data) { 
-	$this->username = $_data;
-  } 
-
-  public function setEmail($_data) { 
-	$this->email = $_data;
-  } 
-
-  public function setPassword($_data) { 
-	$this->password = $_data;
-  } 
-
-  public function setFullname($_data) { 
-	$this->name = $_data;
-  } 
-
-public function setJoinedDate($_data) {  
-    $this->joined = $_data;
-  } 
-
- //Getters
-  public function getUserID() { 
-	return $this->ID;
-  } 
-
-   public function getUsername() { 
-	return $this->username;
-  } 
-
-  public function getEmail() {  
-	return $this->email;
-  } 
-
-public function getPassword() { 
-	return $this->password;
-  } 
-
-  public function getFullname() {  
-	return $this->name;
-  } 
-
-  public function getJoinedDate() { 
-	return $this->joined;
-  } 
-
-
-
-
-
-
 
 		public function update($fields = array(), $id = null) {
 

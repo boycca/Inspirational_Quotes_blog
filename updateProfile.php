@@ -60,7 +60,7 @@
 
                               <?php } else { ?>
                               <li><a href="login.php">Login</a></li>
-                              <li><a href="register.php">Register</a></li>
+                              <li><a href="Register.php">Register</a></li>
                               
                               <?php } ?>
         
@@ -101,8 +101,6 @@ if (!$user->isLoggedIn()) {
                     'min'       => 2,
                     'max'       => 50
                 ),
-
-                 
                   'email'  => array(
                     'fieldName' => 'email',
                     'required'  => true,
@@ -118,7 +116,6 @@ if (!$user->isLoggedIn()) {
                         'name' => Input::get('name'),
                         'username' => Input::get('username'),
                         'email' => Input::get('email')
-                        
                     ));
                     Session::flash('home','Your details have been updated');
                     Redirect::to('index.php');
@@ -137,9 +134,7 @@ if (!$user->isLoggedIn()) {
                               </p>
 
 
-
-
-<div class ="login_reg" id ="box">
+<div class ="login_reg">
 <form action="" method="post">
     <div class="field">
         <label for="name">Name</label>
@@ -149,51 +144,12 @@ if (!$user->isLoggedIn()) {
         <label for="name">Email Address</label>
         <input type="text" name="email" id="email" value="<?php echo escape($user->data()->email); ?>" autocomplete="off"/>
     </div>
-    <span style="float:right;">
     <input type="hidden" name="token" value="<?php echo Token::generate(); ?>"/>
     <input type="submit" value="Update"/>
-     </span>
 </form>
-
-
-<div class="fileuploadholder">
-    <form action ="updateProfile.php" method="post" enctype= "multipart/form-data" name="FileUploadForm" id="FileUploadForm">
-    <label for="image">Select Image</label>
-    <input type ="file" name="image">
-    <input type ="submit" name="upload" value="Upload Now">
-</form>
-<?php
-    if(isset($_FILES['image'])){
-        // Creates the Variables needed to upload the file
-        $UploadName = $_FILES['image']['name'];
-        $UploadName = mt_rand(100000, 999999).$UploadName;
-        $UploadTmp = $_FILES['image']['tmp_name'];
-        $UploadType = $_FILES['image']['type'];
-        $FileSize = $_FILES['image']['size'];
-        
-        // Removes Unwanted Spaces and characters from the files names of the files being uploaded
-        $UploadName = preg_replace("#[^a-z0-9.]#i", "", $UploadName);
-        // Upload File Size Limit 
-        if(($FileSize > 125000)){
-            
-            die("Error - File too Big");
-            
-        }
-        // Checks a File has been Selected and Uploads them into a Directory on your Server
-        if(!$UploadTmp){
-            die("No File Selected, Please Select an Image");
-        }else{
-            move_uploaded_file($UploadTmp, "user_photos/$UploadName");
-            echo "File was Uploaded Successfully!!";
-            echo "<img src='user_photos/$UploadName'>";
-
-        }
-    }
-?>
-</div>  
 </div>
 
-                                      
+                                        
 
 </div>
 

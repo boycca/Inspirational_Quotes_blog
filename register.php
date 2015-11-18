@@ -15,8 +15,8 @@
     <meta name="author" content="">
 
     <title>Asaphot - Register</title>
-    <link rel="stylesheet" type="text/css" href="style.css" /> 
-    <link rel="stylesheet" href="css/style.css"/> 
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="css/style.css"/>
 
     <!-- Bootstrap Core CSS -->
       <link href="css/bootstrap.min.css" rel="stylesheet"> 
@@ -28,17 +28,7 @@
     <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
-<style>
-body { margin:0; padding:0; background-color:#CCC; }
-.fileuploadholder {
-    width:400px;
-    height:200px;
-    margin: 60px auto 0px auto;
-    background-color:#FFF;
-    border:1px solid #CCC;
-    padding:6px;
-}
-</style>
+
     
 
 </head>
@@ -52,15 +42,8 @@ body { margin:0; padding:0; background-color:#CCC; }
                               <li><a href="index.php">Home</a></li>  
                               <li><a href="about.php">About</a></li>
                               <li><a href="contact.php">Contact</a></li>
-                              <li class="dropdown"><a data-toggle="dropdown" href="ooUserTest.php">OOTest <span class="caret"></span> </a>
-                                <ul class="dropdown-menu">
-                                <li><a href="ooUserTest.php">OO User Test</a></li>
-                                                            </ul>
-
-                              </li>
                               <li><a href="login.php">Login</a></li>
                               <li><a href="register.php">Register</a></li>
-
                               <?php
                               if(isset($_SESSION['id'])) {
                     ?>
@@ -78,8 +61,6 @@ body { margin:0; padding:0; background-color:#CCC; }
                     <?php
                     }
                     ?>
-                      <li><a href="CP2/index.php">Check Point 2</a></li>
-                    <li><a href="MVC/index.php">MVC</a></li>
                             </ul>
                         </nav>
                         </div>
@@ -170,7 +151,7 @@ body { margin:0; padding:0; background-color:#CCC; }
                                 </p>
 
 
-<div class ="login_reg" id ="box">
+<div class ="login_reg">
 <form action="" method="post">
     <div class="field">
         <label for="username">Username</label>
@@ -201,9 +182,6 @@ body { margin:0; padding:0; background-color:#CCC; }
                                             </span>
                                             </div>
 </form>
-
-
-
 </div>
 
 

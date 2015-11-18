@@ -43,17 +43,9 @@
                               <li><a href="index.php">Home</a></li>  
                               <li><a href="about.php">About</a></li>
                               <li><a href="contact.php">Contact</a></li>
-                              <li class="dropdown"><a data-toggle="dropdown" href="ooUserTest.php">OOTest <span class="caret"></span> </a>
-                                <ul class="dropdown-menu">
-                                <li><a href="ooUserTest.php">OO User Test</a></li>
-                                
-                            </ul>
-
-                              </li>
                               <li><a href="login.php">Login</a></li>
                               <li><a href="register.php">Register</a>
                               </li>
-
                                 <?php
                     if(isset($_SESSION['id'])) {
                     ?>
@@ -71,8 +63,6 @@
                     <?php
                     }
                     ?>
-                      <li><a href="CP2/index.php">Check Point 2</a></li>
-                    <li><a href="MVC/index.php">MVC</a></li>
                             </ul>
                             </nav>
                         </div>
@@ -130,7 +120,7 @@
 
                               </p>
 
-<div class ="login_reg" id="box">
+<div class ="login_reg">
 <form action="" method="post">
     <div class="field">
         <label for="username">Username</label>

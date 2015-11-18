@@ -50,13 +50,6 @@
                             <li><a href="index.php">Home</a></li>
                               <li><a href="about.php">About</a></li>
                               <li><a href="contact.php">Contact</a></li>
-                              <li class="dropdown"><a data-toggle="dropdown" href="OOTest.php">OOTest <span class="caret"></span> </a>
-                                <ul class="dropdown-menu">
-                                <li><a href="ooUserTest.php">OO User Test</a></li>
-                                
-                            </ul>
-
-                              </li>
                             
                             <?php if($user->data()) { ?>
                             <!-- <li><a class="navbar-brand" href="index.html">ASAPHOT</a></li> -->
@@ -72,7 +65,7 @@
                               <?php } else { ?>
                                
                               <li><a href="login.php">Login</a></li>
-                              <li><a href="register.php">Register</a></li>
+                              <li><a href="Register.php">Register</a></li>
                               
                               <?php } ?>
 
@@ -95,8 +88,7 @@
                     }
                     ?>
         
-                    <li><a href="CP2/index.php">Check Point 2</a></li>
-                    <li><a href="MVC/index.php">MVC</a></li>
+
                             </ul>
                             </nav>
                         </div>

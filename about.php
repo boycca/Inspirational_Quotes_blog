@@ -52,13 +52,6 @@
                             <li><a href="index.php">Home</a></li>
                               <li><a href="about.php">About</a></li>
                               <li><a href="contact.php">Contact</a></li>
-                              <li class="dropdown"><a data-toggle="dropdown" href="OOTest.php">OOTest <span class="caret"></span> </a>
-                                <ul class="dropdown-menu">
-                                <li><a href="ooUserTest.php">OO User Test</a></li>
-                                
-                            </ul>
-
-                              </li>
                             
                             <?php if($user->data()) { ?>
                             <!-- <li><a class="navbar-brand" href="index.html">ASAPHOT</a></li> -->
@@ -74,7 +67,7 @@
                               <?php } else { ?>
                               
                               <li><a href="login.php">Login</a></li>
-                              <li><a href="register.php">Register</a></li>
+                              <li><a href="Register.php">Register</a></li>
                               
                               <?php } ?>
 
@@ -96,8 +89,7 @@
                     }
                     ?>
         
-                    <li><a href="CP2/index.php">Check Point 2</a></li>
-                    <li><a href="MVC/index.php">MVC</a></li>
+
                             </ul>
                             </nav>
                         </div>
@@ -122,9 +114,9 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <p>My name is Jauro Asanarimam Moses. Im in my final year at Linton University Malaysia with a major of BACHELOR OF SCIENCE (HONS) COMPUTING 3+0 IN COLLABORATION WITH LEEDS BECKETT UNIVERSITY, UK. Im a graphic designer and a video editor from Nigeria. I use Sofwares like Adobe Photoshop, Adobe Illustrator and Final cut pro.  I speak English, Nyanja, Hausa, French, spanish and Swahili.</p>
-                <p>Dont get it twisted, Im not a poet. This is an assignment from Advanced Internet Development A. Feel free to read through the inspiring posts in here and subscribe to get latest updates. </p>
-                <p></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe nostrum ullam eveniet pariatur voluptates odit, fuga atque ea nobis sit soluta odio, adipisci quas excepturi maxime quae totam ducimus consectetur?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius praesentium recusandae illo eaque architecto error, repellendus iusto reprehenderit, doloribus, minus sunt. Numquam at quae voluptatum in officia voluptas voluptatibus, minus!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum molestiae debitis nobis, quod sapiente qui voluptatum, placeat magni repudiandae accusantium fugit quas labore non rerum possimus, corrupti enim modi! Et.</p>
             </div>
         </div>
     </div>

@@ -3,9 +3,9 @@
 	$GLOBALS['config'] = array(
 		'mysql'		=> array(
 			'host'		=> 'localhost',
-			'username'	=> 'asajau_ei',
-			'password'	=> 'bossfahook',
-			'db'		=> 'asajau_ei',
+			'username'	=> 'root',
+			'password'	=> '',
+			'db'		=> 'asaphot',
 		),
 		'remember'	=> array(
 			'cookieName'	=> 'hash',
@@ -17,10 +17,9 @@
 		)
 	);
 	
-	function jauro($class) {
+	spl_autoload_register(function($class) {
 		require_once 'classes/'.$class.'.php';
-	}
-	spl_autoload_register("jauro");
+	});
 
 	require_once 'functions/sanitize.func.php';
 

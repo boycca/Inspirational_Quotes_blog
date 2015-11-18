@@ -1,8 +1,4 @@
 <?php
-//include('classes/Config.php'); 
-
-?>
-<?php
 	class Database {
 		private static $_instance = null;
 		private $_pdo,
